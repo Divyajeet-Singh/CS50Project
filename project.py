@@ -20,12 +20,13 @@ def main():
         else:
             message = f"WELCOME, {player}".strip()
 
-        print(cowsay.tux(message))
+        cowsay.tux(message)
 
         user_score = get_user_score(player)  # Will return either False or Score
         if user_score == False:
             update_user_points(False, player, 0)
             user_score = 0
+        print(f"\nYour Current Score {user_score}")
 
         user_choice = '1'
         while user_choice == '1':
@@ -33,7 +34,7 @@ def main():
             if -50000 < result < 50000:
                 score = user_interaction(question, result, user_score)
                 update_user_points(False, player, score)
-                user_score = get_user_score(player) 
+                user_score = get_user_score(player)
                 user_choice = input(f"\nYour Score {user_score} \n \n \t1 - Next question.\n \t2 - Exit \n").lower()
             else:
                 pass
