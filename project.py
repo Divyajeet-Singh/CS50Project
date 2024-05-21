@@ -126,13 +126,13 @@ def user_interaction(question: str, answer: int, score: int):
         user_answer = int(input("Answer: "))
         if user_answer == answer:
             user_score = int(score) + 1
-            print("Well Done !")
+            print("\nWell Done !")
             return str(user_score)
         else:
-            print("Better luck next time :)")
+            print(f"\nCorrect Answer: {answer}\nBetter luck next time :)")
             return score
     except ValueError:
-        print("Enter numeric value for the answer")
+        print("\nEnter numeric value for the answer")
 
 
 if __name__ == "__main__":
