@@ -15,7 +15,7 @@ def main():
     try:
         player = input("What's your name? ").title()
         if "," in player:
-            _, first = player.strip().split(", ")
+            _ , first = player.strip().split(", ")
             message = f"WELCOME, {first}".strip()
         else:
             message = f"WELCOME, {player}".strip()
