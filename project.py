@@ -35,7 +35,7 @@ def main():
                 score = user_interaction(question, result, user_score)
                 update_user_points(False, player, score)
                 user_score = get_user_score(player)
-                user_choice = input(f"\nYour Score {user_score} \n \n \t1 - Next question.\n \t2 - Exit \n").lower()
+                user_choice = input(f"\nYour Score {user_score} \n \n \t1 - Next question\n \t2 - Exit \n").lower()
             else:
                 pass
     except Exception as e:
