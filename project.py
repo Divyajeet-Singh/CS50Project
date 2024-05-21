@@ -27,13 +27,14 @@ def main():
             update_user_points(False, player, 0)
             user_score = 0
 
-        user_choice = "y"
-        while user_choice == "y":
+        user_choice = '1'
+        while user_choice == '1':
             question, result = math_question()
             if -50000 < result < 50000:
                 score = user_interaction(question, result, user_score)
                 update_user_points(False, player, score)
-                user_choice = input("Press 'Y' to continue: ").lower()
+                user_score = get_user_score(player) 
+                user_choice = input(f"\nYour Score {user_score} \n \n \t1 - Next question.\n \t2 - Exit \n").lower()
             else:
                 pass
     except Exception as e:
