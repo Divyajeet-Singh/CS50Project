@@ -1,7 +1,7 @@
 """
 This program will randomly set an arthmetic question for the user and expect an answer from the user in the nearest round number.
 If the user gets wrong answer, the program will display the correct answer and ask if you want to answer next question.
-If user gets the answer correct, the program with compliment and ask if you want to answer next question.
+If user gets the answer correct, the program gives compliment and ask if you want to answer next question.
 Apart from this the program will keep track of the score and will save the score along with the questions that were asked along with the answers to the file.
 P.S: This program is a game where all the details of the user is taken first and saved along with the score file.
 """
