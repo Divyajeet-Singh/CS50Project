@@ -4,8 +4,8 @@ from project import get_user_score, update_user_points, user_interaction, math_q
 
 
 def test_user_registered():
-    assert get_user_score("Kus") == False
-    assert get_user_score("Ann") == "100"
+    assert get_user_score("Kus") == False #New User
+    assert get_user_score("Ann") == "100" #Existing User
 
 
 def test_update_points():
