@@ -1,5 +1,5 @@
 # Solve Math questions and get points
-#### Video Demo:  [<URL HERE>](https://youtu.be/CLG3mfti2T4)
+#### Video Demo:  [https://youtu.be/CLG3mfti2T4]
 #### Description:
 This project is a fun and interactive game that challenges users with random arithmetic questions. The user is expected to provide answers rounded to the nearest whole number. The game keeps track of the user's score and saves the details of each question and answer to a file. It also includes a feature to greet the user and maintain a personalized score history.
 ##### Features
